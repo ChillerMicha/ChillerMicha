@@ -1,0 +1,542 @@
+import java.awt.Point;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Schleifen {
+
+	public static void main(String[] args) {
+	
+		
+		/*
+		int i = 20;
+		while (i<10) {
+			System.out.print(i);
+			i++;
+		}
+		
+		System.out.println("");
+		
+	int j = 20;
+	do {
+	System.out.print(j);
+	j++;
+	}
+    while (j<10);
+	*/
+	/*
+	int i ;
+	for (i=0; i<10; i++) {
+		System.out.print(k+"  ");
+	}
+	*/
+	/*	
+	for (int i = 100; i>=10; i-=10) {
+		System.out.print(i+"  ");
+	}
+	
+	int i=0;
+		for (i=0; i<5; i++) {
+			System.out.print("hallo ");
+				}
+		System.out.print("Der Wert von i ist : "+i);
+	
+	*/
+	/*
+		int i=0;
+		int summe=0;
+		do {
+			System.out.print(i+i);
+			i++;
+		}
+		while (s<1000);
+		
+		
+		
+			int summe = 0;
+	for(int i =1; i<=1000;i++) {
+		summe = summe +i;
+	
+	}
+	System.out.print(summe);
+	
+		
+				int summe = 0;
+		for(int i =1; i<=1000;i++) {
+			summe = summe +i;
+		
+		}
+		System.out.print(summe);
+		
+		
+		
+		int []a= {4,6,7,2,77};
+for (int svar:a)
+	System.out.print(svar);
+	
+		*/
+	/*	
+int a=0;
+for (int i=0; i<100; i++) {
+	a++;
+	System.out.print(a+" ");
+	if (a==15)
+		break;
+}
+
+
+
+	int a=0;
+		for (int i=0; i<5; i++) {
+			a++;
+			System.out.println(a+" ");
+			System.out.println("jetzt ist schluss ");
+
+			int a=100;
+		for (int i=5; i<=50;) {
+			a++;
+			System.out.print(a-5);
+		}
+
+	*/
+		//SCHLEIFEN AUFGABE
+			/*
+int i = 100;
+for(i=100; i>=50;i-=5) {
+	System.out.println(i);
+}
+	
+	
+		int j=100;
+while(j>=50) {
+	System.out.println(j);
+	j-=5;
+}
+
+
+		Random r;
+		r= new Random();
+		int t = r.nextInt(100);
+		System.out.println(r);
+
+
+		Random r;
+		r= new Random();
+		int t = r.nextInt(100);
+		System.out.println(r);
+
+
+
+
+
+			Random r = new Random();
+		double n=r.nextDouble();
+		System.out.println(n+20);
+
+
+Point p;
+		p = new Point (2,5);
+		System.out.println(p.x);
+		System.out.println(p.y);
+		p.x = 1;
+		System.out.println(p.x);
+		
+	Point p1 = new Point (3,0);
+	Point p2 = p1;
+	System.out.println(p1.x);
+	System.out.println(p2.x);
+
+
+
+
+
+String x = "hallo ";
+int y = x.lenght();
+System.out.println(y);
+		
+
+		
+			Scanner scan = new Scanner (System.in);
+		int eingabeZahl;
+		System.out.println("Zahl Eingeben: ");
+		eingabeZahl =scan.nextInt();
+		scan.close();
+		double quadratzahl = Math.pow(eingabeZahl, 2);
+		System.out.println("Das Quadrat dieser Zahl ist:"+ quadratzahl);
+		
+	double zahl1 ,zahl2 , ergebnis;
+	Scanner scan = new Scanner (System.in);
+	System.out.println("erste Zahl eingeben");
+	
+	Scanner scan = new Scanner (System.in);
+		
+		
+		
+		
+		
+		
+		
+		
+String password = "Puhh  a ad  ";
+		int anzGroß=0, anzKlein=0, anzLeer=0, anzAndere=0, anzZiffer=0, punkte=0;
+		char[] c= password.toCharArray();
+		for (char svar: c) {
+			if(Character.isUpperCase(svar))
+				anzGroß++;
+			else if (Character.isLowerCase(svar))
+				anzKlein++;
+			else if (Character.isDigit(svar))
+				anzZiffer++;
+			else anzAndere++;
+			}
+		if (anzGroß>0 & anzKlein>0)
+			punkte++;
+		if (anzZiffer>0)
+			punkte++;
+		if (anzAndere>0)
+			punkte++;
+		if (password.length()>7)
+			punkte++;
+		
+		System.out.println("Anzahl Punkte: " +punkte);
+		
+		
+			double d= 1.0/16;
+		System.out.format("d=%.2f",d);		
+		
+		
+		
+		
+		
+		
+		String monat = "APRIL";
+		String monatKlein = monat.toLowerCase();
+		int tage= 0;
+		switch (monatKlein) {
+		case "januar":
+		case "märz":
+		case "mai":
+		case "juli":
+		case "august":
+		case "oktober":
+		case "dezember":
+		tage = 31;
+		break;
+		case "april":
+		case "juni":
+		case "september":
+		case "november":
+			tage = 30;
+			break;
+		case "februar":
+			tage = 28;
+			break;
+			default : System.out.println("kein Monatsname");
+		}
+		if (tage != 0)
+		System.out.println("der "+ monat + " hat "+ tage+ " Tage");
+		
+		
+	String schulz = "/home/schulz/Fotos/Garten.jpeg";
+		int pos = 1+schulz.lastIndexOf("/");
+		System.out.println(pos);
+		String pfad = schulz.substring(0, pos);
+		System.out.println(pfad);
+	    String dateiname = schulz.substring(pos);
+	    System.out.println(dateiname);
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    ArrayList<String> dynFeld1= new ArrayList<>();
+		
+		dynFeld1.add("Franz ");
+		dynFeld1.add("jagt ");
+		dynFeld1.add("im ");
+		
+		ArrayList<String> dynFeld2 = new ArrayList<>();
+		dynFeld2.add("verwahrlosten");
+		dynFeld2.add("Taxi");
+		
+		dynFeld2.addAll(dynFeld2);
+		
+		
+		dynFeld1.add("quer ");
+		dynFeld1.add("durch ");
+		dynFeld1.add("Bayern ");
+		
+		dynFeld1.add(3,"völlig ");
+		
+		for(String s: dynFeld1) {
+			System.out.print(s);
+	    
+		
+		*/
+		
+		}
+			
+		
+		
+		
+	}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  public class HelloWorld {
+
+	public static void main(String[] args) {
+		/*
+		//System.out.println("Hallo Welt");
+		byte b;
+		b = 2;
+		System.out.println(b);
+		
+		long y = 18;
+		System.out.println(y);
+		
+		
+		int wert1 = 2;
+		System.out.println("der Wert 1 ist: "+wert1);
+		
+			int g=2;
+				int h=6;
+				int erg = g+h;
+				System.out.println("Das Ergebnis ist "+erg);
+				
+				int wert1= 2 ;
+		int wert2= 6;
+		System.out.println("die werte sind "+wert1+" und "+wert2);
+		
+		double t;
+t= 1.7;
+System.out.println(t);
+		t=1.9;
+		System.out.println(t);		
+		
+			double breite = 10.7;
+	double laenge = 13.7;
+	double umfang = (laenge+breite)*2;
+	double flaeche = (laenge*breite);
+	System.out.println("Umfang: "+umfang);
+	System.out.println("Fläche: "+ flaeche);
+		
+			double breite = 10.7;
+		double laenge = 13.7;
+		double hoehe = 4.4;
+		double umfang = (laenge+breite)*2;
+		double flaeche = (laenge*breite);
+		double Volumen = (laenge*breite*hoehe);
+		System.out.println("Umfang: "+umfang);
+		System.out.println("Fläche: "+ flaeche);
+		System.out.println("Volumen: "+ Volumen);
+		
+		
+				long i=1000000;
+		i = i*i;
+		System.out.println(i);
+		
+		int wert1= 5;
+		int wert2= 2;
+		double ergebnis = (double)wert1/wert2;
+		System.out.println(ergebnis);
+		
+		
+		
+		int a=3, b=4;
+boolean ok = (a==b);
+if(ok) {
+	System.out.println("a und b haben den gleichen wert");
+	
+		}
+		boolean b= true;
+if (b) {
+
+	System.out.println("b ist wahr");
+	
+	boolean f= 5<2;
+if (f==false) {
+	System.out.println("f ist falsch");
+	
+	
+	
+	
+	boolean f= 5<2;
+if (!f) {
+	System.out.println("f ist falsch");	
+	
+	
+	int i = 22;
+int w = i%5;
+System.out.println(w);	
+
+	int r = 5;
+System.out.println(++r);	
+
+
+int z= 12;
+int b=++z;
+System.out.println(z);
+System.out.println(b);	
+
+int a=5,b=5;
+if (a==b) {
+	System.out.println("moin moin");	
+	
+	
+	int a=12;
+int b= 23;
+if(a>3 & b>5) {
+	System.out.println("moin moin");
+
+	
+	
+	
+int x=6;
+if (x==4)  {
+System.out.println("x ist 4");
+	}
+else {
+	System.out.println("x ist nicht 4");
+}
+
+	
+	int alter = 19;
+	int max = 75;
+	int min = 18;
+	
+	if (alter>max | alter <min) {
+		System.out.println("Du darft nicht mitmachen");
+	}
+	else { 
+		System.out.println("Du darfst Mitglied werden");
+	}
+		
+	
+	
+	
+		int a = 8;
+		if (a<3) {
+		System.out.println("a ist kleiner 3");
+		}
+		else if (a<7) {
+			System.out.println("a ist </= 3 und > 7");
+		}
+		else {
+			System.out.println("a ist </= 7");
+		}
+
+
+int jahr= 2019;
+boolean schaltjahr = false;
+if (jahr % 400 == 0) {
+	schaltjahr = true;
+}
+else if (jahr % 100 == 0) {
+	schaltjahr = false;
+}
+else if (jahr % 4 == 0) {
+	schaltjahr = true;
+}
+else {
+	schaltjahr = false;
+}
+if (schaltjahr = false) {
+	System.out.println(jahr + " ist ein Schaltjahr");
+}
+else {
+	System.out.println(jahr + " ist kein Schaltjahr");
+}
+		
+		
+		Wochenende oder Arbeitstag:
+		
+	int tag = 5;
+				if (tag<6) {
+					System.out.println(tag + " ist ein arbeitstag");
+				}
+				else if (tag >= 6) {
+					System.out.println(tag + " ist Wochenende");
+				}
+		
+		
+		
+		
+		
+		
+		String monat = "April";
+		int tage= 0;
+		switch (monat) {
+		case "Januar":
+		case "März":
+		case "Mai":
+		case "Juli":
+		case "August":
+		case "Oktober":
+		case "Dezember":
+		tage = 31;
+		break;
+		case "April":
+		case "Juni":
+		case "September":
+		case "November":
+			tage = 30;
+			break;
+		case "Februar":
+			tage = 28;
+			break;
+			default : System.out.println("kein Monatsname");
+		}
+		if (tage != 0)
+		System.out.println("der "+ monat + " hat "+ tage+ " Tage");
+		
+		
+		
+	int wochentag = 8;
+	switch (wochentag) {
+	case 1: System.out.println("Es ist Montag");
+		break;
+	case 2: System.out.println("Es ist Dinstag");
+	break;
+	case 3: System.out.println("Es ist Mittwoch");
+	break;
+	case 4: System.out.println("Es ist Donnerstag");
+	break;
+	case 5: System.out.println("Es ist Freitag");
+	break;
+	case 6: System.out.println("Es ist Samstag");
+	break;
+	case 7: System.out.println("Es ist Sonntag");
+	break;
+	default : System.out.println("Keine Gültige Eingabe");
+	}	
+	
+	
+	
+*/
+	
+		
+			
+		
+	
+		
+
+	
+
+	}
+
+	
